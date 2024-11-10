@@ -11,9 +11,9 @@ export const userLogin = createAsyncThunk(
     //     },
     //   };
       const  data  = await axios.post("/signup", formData);
-      console.log("data==####",data);
+      // console.log("data==####",data);
       if (data.data.auth) {
-        console.log("data==####$$$$$$$$$$$$$$$$$$$$$$",data.data.result);
+        // console.log("data==####$$$$$$$$$$$$$$$$$$$$$$",data.data.result);
         localStorage.setItem("lmsweb_uId", data.data.result._id);
         // localStorage.setItem("star_upass", data.password);
         navigate("/");
@@ -40,7 +40,7 @@ export const getUserDetail = createAsyncThunk(
     let sendformData = {};
     sendformData.user_id = localStorage.getItem("lmsweb_uId");
     // sendformData.password = localStorage.getItem("star_upass");
-    console.log("sendformData======%%%%%%%%%%%",sendformData)
+    // console.log("sendformData======%%%%%%%%%%%",sendformData)
     try {
       return sendformData;
       

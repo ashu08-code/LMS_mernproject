@@ -12,7 +12,7 @@ const Home = () => {
     return state.auth.userInfo;
   });
 
-  console.log("userInfo=====",userInfo)
+  // console.log("userInfo=====",userInfo)
 
   return (
     <>

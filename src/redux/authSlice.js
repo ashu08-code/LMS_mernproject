@@ -52,7 +52,7 @@ const authSlice = createSlice({
       .addCase(getUserDetail.fulfilled, (state, action) => {
         state.loading = false;
         state.userInfo = action.payload;
-        console.log("userInfo updated in state:", state.userInfo);
+        // console.log("userInfo updated in state:", state.userInfo);
       })
       .addCase(getUserDetail.rejected, (state, action) => {
         state.loading = false;

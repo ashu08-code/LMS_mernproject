@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getUserDetail } from './actions/authActions.js';
+import CreateCourse from './Pages/CreateCourse.jsx';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Loginpage/>}/>
+    <Route path='/create-course' element={<CreateCourse/>}/>
 
    </Routes>
    <Footer/>
